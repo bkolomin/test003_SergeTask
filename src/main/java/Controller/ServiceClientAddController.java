@@ -13,8 +13,8 @@ public class ServiceClientAddController {
 
     @RequestMapping("/service/client/add")
     public String transactions(@RequestParam(value="name", defaultValue="none") String name,
-                               @RequestParam(value="surName", defaultValue="none") String surName,
+                               @RequestParam(value="surname", defaultValue="none") String surname,
                                @RequestParam(value="passportNumber", defaultValue="none") String passportNumber) {
-        return "test: " + name;
+        return "test: " + name + ", surname: " + surname;
     }
 }
